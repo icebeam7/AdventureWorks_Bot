@@ -1,0 +1,244 @@
+{
+  "luis_schema_version": "3.2.0",
+  "versionId": "0.1",
+  "name": "AdventureWorksBot",
+  "desc": "A bot which based on Adventure Works database",
+  "culture": "en-us",
+  "tokenizerVersion": "1.0.0",
+  "intents": [
+    {
+      "name": "Login"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "PlaceOrder"
+    },
+    {
+      "name": "ProductInfo"
+    }
+  ],
+  "entities": [
+    {
+      "name": "ProductName",
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [
+    {
+      "name": "Product",
+      "subLists": [
+        {
+          "canonicalForm": "product",
+          "list": [
+            "product",
+            "item",
+            "products",
+            "items"
+          ]
+        }
+      ],
+      "roles": []
+    }
+  ],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "email",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "bmw bellevue please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "burgers seafood late dinner ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "call pizza skype",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "check reviews for husqvarna weed wacker",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "checkout please",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "complete the order please",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "credentials info: tony@yahoo.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "display the spices section pricing",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "do you have caps?",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 12,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "get into the system",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "guide me to the best drugstore matte foundation",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "how much am i paying?",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "i want to access the system",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i want to know the price of a mountain bike",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 30,
+          "endPos": 42
+        }
+      ]
+    },
+    {
+      "text": "i want to log in",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i want to see the product list",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "i would like to enter my credentials",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "i'm finished",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "login, please",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "my email is tony@hotmail.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "my username is tony@gmail.com",
+      "intent": "Login",
+      "entities": []
+    },
+    {
+      "text": "place the order",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "religious gifts kirkland wa please",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "show me the top items",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "tell me more about helmets",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 19,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "that's all i need",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "what can you tell me about bikes?",
+      "intent": "ProductInfo",
+      "entities": [
+        {
+          "entity": "ProductName",
+          "startPos": 27,
+          "endPos": 31
+        }
+      ]
+    },
+    {
+      "text": "what products do you sell?",
+      "intent": "ProductInfo",
+      "entities": []
+    },
+    {
+      "text": "what's the final cost?",
+      "intent": "PlaceOrder",
+      "entities": []
+    },
+    {
+      "text": "where i can find barbeque tacos ?",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "where is nearest half price books",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "which products do you have to offer?",
+      "intent": "ProductInfo",
+      "entities": []
+    }
+  ],
+  "settings": []
+}
